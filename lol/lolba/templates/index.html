@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOL</title>
+</head>
+<body>
+    {% for host in hosts %}
+        <a href="{{ host.href }}">
+            <div>
+                <div>
+                    <img src="{{ host.src }}">
+                </div>
+                <div>
+                    <div>{{ host.title }}</div>
+                    <div>{{ host.name }}</div>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <div>{{ host.num }}人</div>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</body>
+</html>
